@@ -16,12 +16,6 @@ npm run hot
 
 Change the `background-color` in `main.css`
 
-### Issue
-
-Error in the browser's console: `GET http://localhost:8080/08a64a5d1bd954786070.hot-update.json 404 (Not Found)`
-
-The dev server tries to fetch from the backend on port 8080 and not from webpack on port 9000.
-
 ### Issue 1 - publicPath
 
 - Go to `http://localhost:9000`
