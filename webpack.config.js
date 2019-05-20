@@ -3,6 +3,9 @@ const path = require('path')
 module.exports = {
   mode: 'development',
   entry: path.join(__dirname, 'bundle.js'),
+  output: {
+    // publicPath: '/dist/'
+  },
   devServer: {
     contentBase: __dirname,
     publicPath: '/dist/',
@@ -12,5 +15,16 @@ module.exports = {
     headers: {
       'Access-Control-Allow-Origin': '*',
     }
-  }
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" }
+        ]
+      }
+    ]
+  },
 }

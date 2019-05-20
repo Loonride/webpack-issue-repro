@@ -5,12 +5,14 @@
   "license": "MIT",
   "scripts": {
     "server": "node server.js",
-    "hot": "webpack-dev-server --hot --config webpack.config.js"
+    "hot": "webpack-dev-server --config webpack.config.js"
   },
   "dependencies": {
-    "express": "^4.16.3",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1",
-    "webpack-dev-server": "^3.1.9"
+    "css-loader": "^2.1.1",
+    "express": "^4.17.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
   }
 }

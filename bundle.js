@@ -1,6 +1,4 @@
-if (module.hot) {
-  module.hot.accept();
-}
+require('./main.css');
 
 const el = document.getElementById('container')
 
